@@ -32,16 +32,16 @@ export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig"
 # Wine
 
 ## Add Wine to $PATH
-export MGFXC_WINE_PATH="/Users/gyusaf/.winemonogame"
+export MGFXC_WINE_PATH="$HOME/.winemonogame"
 
-export PATH="$PATH:/Users/gyusaf/.winemonogame"
+export PATH="$PATH:$HOME/.winemonogame"
 
 # ---
 
 # pip
 
 ## Add pipx to $PATH
-export PATH="$PATH:/Users/gyusaf/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 # ---
 
@@ -75,7 +75,7 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 # !! Contents within this block are managed by juliaup !!
 
-path=('/Users/gyusaf/.juliaup/bin' $path)
+path=('$HOME/.juliaup/bin' $path)
 export PATH
 
 # <<< juliaup initialize <<<

@@ -38,7 +38,7 @@ config.default_cursor_style = 'BlinkingBar'
 config.cursor_thickness = 2
 
 -- Set default working directory for new tabs and windows
-config.default_cwd = '/Users/gyusaf/Developer'
+config.default_cwd = wezterm.home_dir .. '/Developer'
 
 -- Never show the pop-up to confirm closing windows
 config.window_close_confirmation = 'NeverPrompt'
