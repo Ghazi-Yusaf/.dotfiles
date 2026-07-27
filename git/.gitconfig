@@ -1,23 +1,14 @@
 [core]
-	pager = diff-so-fancy | less --tabs=4 -RF
+	pager = delta
 	editor = code --wait
 [interactive]
-	diffFilter = diff-so-fancy --patch
-[color]
-	ui = true
-[color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
-[color "diff"]
-	meta = 11
-	frag = magenta bold
-	func = 146 bold
-	commit = yellow bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
+	diffFilter = delta --color-only
+[delta]
+	features = catppuccin-frappe
+	navigate = true
+	line-numbers = true
+[merge]
+	conflictStyle = zdiff3
 [push]
 	autosetupremote = true
 [pull]
@@ -27,4 +18,5 @@
 [gpg]
 	program = gpg
 [include]
+	path = ~/.config/delta/themes/catppuccin.gitconfig
 	path = ~/.gitconfig.local
