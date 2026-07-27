@@ -75,6 +75,13 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # ---
 
+# git-extras
+
+## Auto-completions
+source $(brew --prefix)/share/git-extras/git-extras-completion.zsh
+
+# ---
+
 # fzf
 
 ## Set up fzf key bindings and fuzzy completion
