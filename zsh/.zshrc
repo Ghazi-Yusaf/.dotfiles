@@ -100,6 +100,13 @@ export HSTR_TIOCSTI=y
 
 # ---
 
+# bat
+
+## Use bat to display man pages
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
+# ---
+
 # Utilities
 
 ## Up and down arrow keys will only search the history for commands that start with the currently typed text
@@ -124,3 +131,6 @@ alias copycmd="fc -ln -1 | pbcopy"
 
 ## lazygit
 alias lg="lazygit"
+
+## Use bat instead of cat
+alias cat='bat --paging=never'
