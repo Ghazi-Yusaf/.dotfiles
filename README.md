@@ -14,11 +14,12 @@ Includes configs for:
 - `nvim`
 - `ohmyposh`
 - `wezterm`
+- `btop`
 
 ## Installation
 
 Each top-level folder is a "package" managed by `stow`. Its internal path mirrors where the files should land relative to `$HOME`. After cloning the repo, run the command below to set up the dotfiles:
 
 ```bash
-stow zsh git delta hammerspoon bat gh gh-dash nvim ohmyposh wezterm
+stow zsh git delta hammerspoon bat gh gh-dash nvim ohmyposh wezterm btop
 ```
