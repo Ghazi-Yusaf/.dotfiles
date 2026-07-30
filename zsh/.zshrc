@@ -2,7 +2,7 @@
 
 ## Add oh-my-posh, but only for non-default terminals
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
-  eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/themes/catppuccin_frappe.omp.json)"
+  eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/custom_prompt.omp.json)"
 fi
 
 # ---
