@@ -87,8 +87,11 @@ eval "$(fzf --zsh)"
 export FZF_CTRL_T_COMMAND="fd --type f --hidden --exclude .git"
 export FZF_DEFAULT_COMMAND="fd --type f --hidden --exclude .git"
 
-## Use bat to preview files
-export FZF_CTRL_T_OPTS="--preview 'bat --color=always --style=numbers --line-range=:500 {}'"
+## Preview directories/files
+export FZF_CTRL_T_OPTS="--style full --preview 'fzf-preview.sh {}'"
+export FZF_ALT_C_OPTS="--style full --preview 'eza --tree --level=2 --color=always {}'"
+export FZF_COMPLETION_PATH_OPTS="--style full --preview 'fzf-preview.sh {}'"
+export FZF_COMPLETION_DIR_OPTS="--style full --preview 'eza --tree --level=2 --color=always {}'"
 
 # ---
 
