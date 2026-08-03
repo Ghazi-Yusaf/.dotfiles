@@ -52,16 +52,6 @@ export PATH="$PATH:/Applications/Obsidian.app/Contents/MacOS"
 
 # ---
 
-# oh-my-zsh
-
-## Path to oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
-
-## Move oh-my-zsh cache dumps into their pre-existing cache directory.
-export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
-
-# ---
-
 # Microsoft (.NET)
 
 ## Opt-out of dotnet telemetry.
@@ -75,7 +65,7 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 # !! Contents within this block are managed by juliaup !!
 
-path=('$HOME/.juliaup/bin' $path)
+path=("$HOME/.juliaup/bin" $path)
 export PATH
 
 # <<< juliaup initialize <<<

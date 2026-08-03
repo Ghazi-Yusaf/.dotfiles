@@ -7,6 +7,12 @@ fpath=(~/.zsh.d/ $fpath)
 
 # oh-my-zsh
 
+## Path to oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+
+## Move oh-my-zsh cache dumps into their pre-existing cache directory.
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
+
 ## Use hyphen-insensitive completion. _ and - will be interchangeable.
 HYPHEN_INSENSITIVE="true"
 
