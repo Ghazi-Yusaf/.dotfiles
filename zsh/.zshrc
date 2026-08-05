@@ -84,6 +84,13 @@ eval "$(zoxide init zsh)"
 
 # ---
 
+# mole
+
+## Mole shell completion
+if output="$(mole completion zsh 2>/dev/null)"; then eval "$output"; fi
+
+# ---
+
 # fzf
 
 ## Set up fzf key bindings and fuzzy completion
